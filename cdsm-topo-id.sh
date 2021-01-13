@@ -1,13 +1,16 @@
 #!/bin/bash
 
 # Directory of maps at http://www.madmappers.com/browse.php?TY=R.
+#
+# Do this to extract the ZIP files:
+#
+# $ for f in *.zip; do unzip -o $f; done
+#
+# The -o flag is important so that you are not prompted about overwriting the RSA50k_readme_first.txt file.
 
 FOLDER=data/maps/topographic
 
 BASEURL="https://www.globalmapper.com/datasets/R/South%20Africa/sgSA50k"
-
-https://www.globalmapper.com/datasets/R/South%20Africa/sgSA50k/Eastern%20Cape/3025CB.zip?
-https://www.globalmapper.com/datasets/R/South%20Africa/sgSA50k/Free%20State/2726BB.zip?
 
 mkdir -p $FOLDER
 
